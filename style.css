@@ -1,0 +1,138 @@
+ul.fireflies {
+	list-style: none
+}
+
+li {
+	display: inline-block;
+	background-size: cover;
+	background-image: url(pictures/firefly.png);
+	width: 5px;
+	margin-top: -20px;
+	margin-left: -20px;
+	height: 5px;
+	position: absolute;
+	animation:
+		leftright 24s infinite cubic-bezier(.39, .0, .43, 1.5),
+		updown 12s infinite 1.25s cubic-bezier(.39, .0, .43, 1.5)
+}
+
+li:nth-of-type(2) {
+	animation-delay: 4s;
+	animation-duration: 20s, 17s;
+	animation-fill-mode: backwards, backwards
+}
+
+li:nth-of-type(3) {
+	animation-delay: 2s;
+	animation-duration: 24s, 13s;
+	animation-fill-mode: backwards, backwards
+}
+
+li:nth-of-type(4) {
+	animation-delay: 5.5s;
+	animation-duration: 20s, 17s;
+}
+
+li:nth-of-type(5) {
+	animation-delay: 3.5s;
+	animation-fill-mode: backwards, backwards;
+	animation-duration: 32s, 15s;
+}
+
+li:nth-of-type(6) {
+	animation-delay: 6s;
+	animation-duration: 27s, 19s;
+	animation-fill-mode: backwards, backwards
+}
+
+li:nth-of-type(7) {
+	animation-delay: 7.5s;
+	animation-duration: 23s, 17s;
+	animation-fill-mode: backwards, backwards
+}
+
+li:nth-of-type(8) {
+	animation-delay: 9s;
+	animation-duration: 19s, 13s;
+}
+
+li:nth-of-type(9) {
+	animation-fill-mode: backwards, backwards;
+	animation-duration: 26s, 18s;
+}
+
+li:nth-of-type(10) {
+	animation-fill-mode: backwards, backwards;
+	animation-duration: 24s, 19s;
+}
+
+@keyframes leftright {
+
+	0%,
+	100% {
+		left: 20%;
+	}
+
+	16.666% {
+		left: 90%;
+	}
+
+	33.333% {
+		left: 10%;
+	}
+
+	50% {
+		left: 50%;
+	}
+
+	66.666% {
+		left: 70%;
+	}
+
+	83.333% {
+		left: 40%;
+	}
+}
+
+@keyframes updown {
+
+	0%,
+	100% {
+		top: 0px;
+		width: 20px;
+		height: 20px
+	}
+
+	25% {
+		top: 70%;
+	}
+
+	50% {
+		top: 50%;
+		width: 30px;
+		height: 30px
+	}
+
+	75% {
+		top: 70%;
+		width: 10px;
+		height: 10px
+	}
+}
+
+.blink-1 {
+	animation: blink-1 10s infinite both;
+}
+
+@keyframes blink-1 {
+	0%,
+	50%,
+	100% {
+	  opacity: 1;
+	}
+	25%,
+	75% {
+	  opacity: 0;
+	}
+  }
+  
