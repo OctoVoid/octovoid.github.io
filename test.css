@@ -60,7 +60,7 @@ h4 {
 
 .projectsobal {
     margin-bottom: 40px;
-    margin-left: 16%;
+    margin-left: 15%;
     display: flex;
 }
 
@@ -151,9 +151,9 @@ h4 {
 }
 
 .projects {
-    max-width: 250px;
-    margin-right: 1cm;
-    margin-left: 1cm;
+    max-width: 235px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .projects:hover {
